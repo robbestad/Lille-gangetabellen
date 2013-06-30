@@ -14,7 +14,8 @@ void setup()
 {
   sizeX = 320;//screen.width;
   sizeY = 480;//screen.height;
-  size(sizeX, sizeY);
+  //size(sizeX, sizeY);
+  size(320,480);
   smooth();
   fontSmall=18;
   fontMedium=24;
@@ -106,7 +107,7 @@ void exo()
   fill(255,102,51);
   textFont(font, sizeY/14);
   scoreTime = second()+minute()*60+hour()*3600-elapsedTime;
-  text(scoreTime/60 + " m & " + max(scoreTime-scoreTime/60*60,0) + " sek", sizeX/2, sizeY/15);
+  //text(scoreTime/60 + " m & " + max(scoreTime-scoreTime/60*60,0) + " sek", sizeX/2, sizeY/15);
   for (int i = totalTries; i > 0; i = i - 1) {
     ellipse((sizeX/totalTries)*i-sizeX/(totalTries*2),80,sizeY/48,sizeY/48);
   }
